@@ -46,7 +46,7 @@ img{
 nav.navbar.navbar-default.navbar-fixed-top {
 	    position: absolute;
 		    border: none;
-background-color:rgba(255, 255, 255, 0.27);
+background-color:rgba(0, 0, 0, 0.27);
 }
 .navbar-nav {
     float:none; 
@@ -114,7 +114,7 @@ ul.dropdown-menu {
 }
 /*--end nav bar--*/
 .w3-agile-logo {
-    padding: 1em 2em;
+    padding: 1em 0;
     background: rgba(2, 2, 2, 0.51);
 }
 .head-wl {
@@ -147,13 +147,15 @@ h6.caption {
 }
 
 .email-right p a,
-.w3-header-top-right-text p,
-.agileinfo-social-grids ul li a {
+.w3-header-top-right-text p a, a,
+.agileinfo-social-grids a {
     font-size: 14px;
     color:#F288AF;
     letter-spacing: 2px;
 }
-
+.w3-header-top-right-text a:hover{
+	color: #fff;
+}
 .email-right p a,
 .agileinfo-social-grids ul li {
     display: inline-block;
@@ -464,13 +466,13 @@ a.join-wthree:hover {
     font-weight: 500;
 }
 .heading-agileinfo span:after {
-    content: '';
+    /* content: '';
     background: #212121;
     height: 2px;
     width: 70px;
     position: absolute;
     top: 132%;
-    right: 47%;
+    right: 47%; */
 }
 span.nnn {
     color: #fff;
@@ -498,7 +500,7 @@ span.nnn {
 .panel-title > a {
    color: #000;
     font-size: 25px;
-    line-height: 68px;
+    line-height: 2;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 1px;
@@ -778,7 +780,7 @@ p.white-clrf {
 }        
 /*-- //pricing --*/
 .mwho-we-textmks {
-    padding: 1em 0 5em 10em;
+    padding: 1em 0 5em 2em;
 }
 .donails {
     padding: 5em 0 0;
@@ -857,6 +859,9 @@ ul.tag2:last-child {
 
 .index-copy-right {
 	background: transparent;
+}
+.bottom{
+	margin-left: 30px;
 }
 
 .footer_bottom h6 {
@@ -1192,6 +1197,91 @@ h3.agileits-icons-title {
     word-wrap: break-word;
 	    color: #777;
 }
+
+.p-0{
+	padding: 0 !important;
+}
+
+.heading{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.text-sub-heading-black{
+	font-family: 'PT Serif', serif;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 0;
+    color: #777 !important;
+    font-size: 20px;
+}
+.text-sub-heading-white{
+	font-family: 'PT Serif', serif;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding: 12px 0;
+    color: #fff !important;
+    font-size: 17px;
+}
+.parent-line{
+    position: relative;
+    width: 100%;
+    height: 20px;
+    margin: 5px 0;
+}
+.line-black{
+    content: '';
+    background: #000;
+    height: 2px;
+    width: 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.line-white{
+    content: '';
+    background: #fff;
+    height: 2px;
+    width: 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: 'PT Serif', serif;
+}
+.pb-0{
+    padding-bottom: 0 !important;
+}
+.heading-agileinfo{
+	margin-bottom: 0;
+}
+.mb-0{
+	margin-bottom: 0 !important;
+}
+@media (min-width: 768px) {
+    .text-sub-heading-black, .text-sub-heading-white{
+        width: 73%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .text-sub-heading-black, .text-sub-heading-white{
+        width: 60%;
+    }
+}
+
+
+
+
 @media (max-width:991px){
 	h3.agileits-icons-title {
 		font-size: 28px;
@@ -2217,10 +2307,10 @@ button.close {
     line-height: 30px;
 }
 .donail_left {
-    min-height: 397px;
+    /* min-height: 397px; */
 }
 .mwho-we-textmks {
-    padding: 1em 0 5em 5em;
+    padding: 1em 0 5em 1em;
 }
 .pricing-grid {
     width: 22.4%;
@@ -2374,7 +2464,7 @@ h6.caption {
     letter-spacing: 1px;
 }
 .mwho-we-textmks {
-    padding: 1em 0 3em 1em;
+    padding: 1em 0 3em 0;
 }
 .donail_right {
     float: left;
@@ -2383,7 +2473,7 @@ h6.caption {
 .donail_left {
     float: left;
     width: 55%;
-	    min-height: 364px;
+	    /* min-height: 364px; */
 }
 .pricing-grid {
     width: 45%;
@@ -2483,7 +2573,7 @@ a.join-wthree {
     padding: 3em 0 0;
 }
 .donail_left {
-    min-height: 348px;
+    /* min-height: 348px; */
 }
 .wthree-pricing {
     padding: 3em 0;
